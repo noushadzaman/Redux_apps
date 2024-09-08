@@ -2,6 +2,9 @@
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addFlight } from "../redux/flights/actions";
+import FrameIcon from '../assets/img/icons/Frame.svg'
+import VectorIcon from '../assets/img/icons/Vector (1).svg'
+import VectorThreeIcon from '../assets/img/icons/Vector (3).svg'
 
 const Input = () => {
     const flights = useSelector((state) => state.flights);
@@ -48,7 +51,7 @@ const Input = () => {
                     <div className="des-from">
                         <p>Destination From</p>
                         <div className="flex flex-row">
-                            <img src="./img/icons/Frame.svg" alt="" />
+                            <img src={FrameIcon} alt="" />
                             <select
                                 value={flightData.destinationFrom}
                                 onChange={(e) => onChange(e)}
@@ -65,7 +68,7 @@ const Input = () => {
                     <div className="des-from">
                         <p>Destination To</p>
                         <div className="flex flex-row">
-                            <img src="./img/icons/Frame.svg" alt="" />
+                            <img src={FrameIcon} alt="" />
                             <select
                                 value={flightData.destinationTo}
                                 onChange={(e) => onChange(e)}
@@ -91,7 +94,7 @@ const Input = () => {
                     <div className="des-from">
                         <p>Guests</p>
                         <div className="flex flex-row">
-                            <img src="./img/icons/Vector (1).svg" alt="" />
+                            <img src={VectorIcon} alt="" />
                             <select
                                 value={flightData.guests}
                                 onChange={(e) => onChange(e)}
@@ -108,7 +111,7 @@ const Input = () => {
                     <div className="des-from !border-r-0">
                         <p>Class</p>
                         <div className="flex flex-row">
-                            <img src="./img/icons/Vector (3).svg" alt="" />
+                            <img src={VectorThreeIcon} alt="" />
                             <select
                                 value={flightData.ticketClass}
                                 onChange={(e) => onChange(e)}
