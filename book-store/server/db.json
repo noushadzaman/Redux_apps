@@ -7,7 +7,7 @@
       "price": 14,
       "rating": 3,
       "featured": false,
-      "id": 1
+      "id": "1"
     },
     {
       "name": "The Last Thing He Told Me: A Novel",
@@ -16,16 +16,16 @@
       "price": 13.99,
       "rating": 5,
       "featured": false,
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Eloquent JavaScript, 3rd Edition",
       "author": "Marijn Haverbeke",
       "thumbnail": "https://m.media-amazon.com/images/I/51InjRPaF7L._SX377_BO1,204,203,200_.jpg",
-      "price": 23.99,
+      "price": "23.99",
       "rating": 4,
       "featured": true,
-      "id": 4
+      "id": "4"
     },
     {
       "id": "1c2e",
@@ -37,13 +37,22 @@
       "featured": true
     },
     {
-      "id": "e43c",
-      "name": "itihasher kanna",
-      "author": "Ubaidul",
+      "id": "1c2d",
+      "name": "Masud bhalo hoye jau",
+      "author": "Ubaidul Kader",
       "thumbnail": "https://ds.rokomari.store/rokomari110/ProductNew20190903/260X372/220ea2c05_123355.jpg",
-      "price": "350",
-      "rating": 4,
-      "featured": true
+      "price": "10",
+      "rating": 1,
+      "featured": false
+    },
+    {
+      "id": "73c2",
+      "name": "bal",
+      "author": "bro",
+      "thumbnail": "https://m.media-amazon.com/images/P/1501171348.01._SCLZZZZZZZ_SX500_.jpg",
+      "price": "4",
+      "rating": 3,
+      "featured": false
     }
   ]
 }

@@ -1,5 +1,6 @@
-import { ADD, DELETE, EDIT, LOAD } from "./actionTypes";
 import initialState from "./initialState";
+import { ADD, DELETE, EDIT, LOAD } from "./actionTypes";
+
 
 const booksReducer = (state = initialState, action) => {
   switch (action.type) {
