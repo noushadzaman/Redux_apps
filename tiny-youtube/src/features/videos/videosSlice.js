@@ -15,7 +15,7 @@ export const fetchVideos = createAsyncThunk("videos/fetchVideos", async () => {
   return videos;
 });
 
-const videoSlice = createSlice({
+const videosSlice = createSlice({
   name: "videos",
   initialState,
   extraReducers: (builder) => {
@@ -31,9 +31,10 @@ const videoSlice = createSlice({
       .addCase(fetchVideos.rejected, (state, action) => {
         state.isLoading = false;
         state.videos = [];
-        state.isError = action.error?.message;
+        state.isError = true;
+        state.error = action.error?.message;
       });
   },
 });
 
-export default videoSlice.reducer;
+export default videosSlice.reducer;
