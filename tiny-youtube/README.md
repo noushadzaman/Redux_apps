@@ -1,3 +1,15 @@
+<!-- Run the server in your computer to make client work (details in server folder) -->
+
+
+
+
+
+
+
+
+
+
+
 [![Youtube][youtube-shield]][youtube-url]
 [![Facebook][facebook-shield]][facebook-group-url]
 

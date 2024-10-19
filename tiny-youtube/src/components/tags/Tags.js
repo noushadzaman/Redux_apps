@@ -11,7 +11,6 @@ export default function Tags() {
     dispatch(fetchTags());
   }, [dispatch]);
 
-  console.log(tags);
 
   return tags?.length > 0 ? (
     <section>
