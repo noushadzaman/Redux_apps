@@ -5,3 +5,5 @@ https://66d5b9997c61930415af5602--relaxed-brioche-4ac1dc.netlify.app
 * 04: Shopping-cart (Redux with React) https://glittery-fairy-30b7b7.netlify.app
 * 05: Advanced Todo (Redux Thunk) 
 * 06: Book Store (Redux thunk)
+* 07: Tiny Youtube (Redux toolkit)
+* 08: Expense tracker (Redux toolkit)

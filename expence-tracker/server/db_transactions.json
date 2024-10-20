@@ -1,0 +1,10 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "name": "Salary from Google",
+      "type": "income",
+      "amount": 1000000
+    }
+  ]
+}
