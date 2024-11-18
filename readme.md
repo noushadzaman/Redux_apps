@@ -6,5 +6,6 @@ https://66d5b9997c61930415af5602--relaxed-brioche-4ac1dc.netlify.app
 * 05: Advanced Todo (Redux Thunk) 
 * 06: Book Store (Redux thunk)
 * 07: Tiny Youtube (Redux toolkit)
-* 08: Job Portal (Redux toolkit Query)
+* 08: Job Portal (Redux toolkit)
 * 09: Expense tracker (Redux toolkit)
+* 10: Tiny Youtube Advanced (Redux toolkit & RTK query)
