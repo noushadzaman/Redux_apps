@@ -1,0 +1,32 @@
+{
+  "jobs": [
+    {
+      "title": "DevOps Engineer",
+      "type": "Internship",
+      "salary": "25002",
+      "deadline": "2024-12-31",
+      "id": 1
+    },
+    {
+      "title": "MERN Stack Developer",
+      "type": "Remote",
+      "salary": "18000",
+      "deadline": "2023-12-31",
+      "id": 3
+    },
+    {
+      "title": "Android App Developer",
+      "type": "Full Time",
+      "salary": "35000",
+      "deadline": "2023-12-31",
+      "id": 5
+    },
+    {
+      "title": "DevOps Engineer",
+      "type": "Internship",
+      "salary": "10000",
+      "deadline": "2023-12-28",
+      "id": 7
+    }
+  ]
+}
