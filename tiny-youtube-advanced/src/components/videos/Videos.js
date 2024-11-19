@@ -1,10 +1,20 @@
+// import { useState } from "react";
 import { useGetVideosQuery } from "../../features/api/apiSlice";
 import Error from "../ui/Error";
 import VideoLoader from "../ui/loaders/VideoLoader";
 import Video from "./Video";
 
 export default function Videos() {
-  const { data: videos, isLoading, isError } = useGetVideosQuery();
+  // const [req, setReq] = useState(false);
+  const {
+    data: videos,
+    isLoading,
+    isError,
+    // refetch,
+  } = useGetVideosQuery(undefined, {
+    //   skip: !req,
+    pollingInterval: 3000,
+  });
 
   let content = null;
 
