@@ -5,22 +5,17 @@ export const apiSlice = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: "http://localhost:9000",
   }),
-  tagTypes: ["videos", "video", "relatedVideo"],
+  tagTypes: ["Videos", "Video", "RelatedVideos"],
   endpoints: (builder) => ({
     getVideos: builder.query({
       query: () => `/videos`,
       keepUnusedDataFor: 60,
-      providesTags: ["videos"],
+      providesTags: ["Videos"],
     }),
 
     getVideo: builder.query({
       query: (videoId) => `/videos/${videoId}`,
-      providesTags: (result, error, arg) => [
-        {
-          type: "video",
-          id: arg.id,
-        },
-      ],
+      providesTags: (result, error, arg) => [{ type: "Video", id: arg }],
     }),
 
     getRelatedVideos: builder.query({
@@ -31,10 +26,7 @@ export const apiSlice = createApi({
         return queryString;
       },
       providesTags: (result, error, arg) => [
-        {
-          type: "relatedVideo",
-          id: arg.id,
-        },
+        { type: "RelatedVideos", id: arg.id },
       ],
     }),
 
@@ -44,7 +36,7 @@ export const apiSlice = createApi({
         method: "POST",
         body: data,
       }),
-      invalidatesTags: ["videos"],
+      invalidatesTags: ["Videos"],
     }),
 
     editVideo: builder.mutation({
@@ -54,16 +46,18 @@ export const apiSlice = createApi({
         body: data,
       }),
       invalidatesTags: (result, error, arg) => [
-        "videos",
-        {
-          type: "video",
-          id: arg.id,
-        },
-        {
-          type: "relatedVideo",
-          id: arg.id,
-        },
+        "Videos",
+        { type: "Video", id: arg.id },
+        { type: "RelatedVideos", id: arg.id },
       ],
+    }),
+
+    deleteVideo: builder.mutation({
+      query: (videoId) => ({
+        url: `/videos/${videoId}`,
+        method: "DELETE",
+      }),
+      invalidatesTags: ["videos"],
     }),
   }),
 });
@@ -74,4 +68,5 @@ export const {
   useGetRelatedVideosQuery,
   useAddVideoMutation,
   useEditVideoMutation,
+  useDeleteVideoMutation,
 } = apiSlice;
